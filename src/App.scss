@@ -1,0 +1,97 @@
+.App {
+  background-color: tan;
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  h1 {
+    font-size: 30px;
+  }
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 10px;
+  input {
+    width: 350px;
+    height: 35px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  button {
+    width: 150px;
+    height: 30px;
+    font-size: 18px;
+    border: 1px solid black;
+    border-radius: 8px;
+  }
+}
+
+.gif {
+  position: relative;
+  width: 350px;
+  max-width: 400px;
+  margin: auto;
+  overflow: hidden;
+  &:hover .gif-overlay {
+    opacity: 1;
+  }
+  .gif-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    top: 25%;
+    opacity: 0;
+    transition: all 0.4s ease-in-out 0s;
+  }
+  img {
+    width: 350px;
+  }
+  &:hover .gif-details {
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+  }
+}
+
+.gif-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 300px;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in-out 0s;
+  h5 {
+    color: white;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    &a:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.gif-container {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+}

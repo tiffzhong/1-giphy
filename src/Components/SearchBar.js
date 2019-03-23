@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import "../App.scss";
 class SearchBar extends Component {
   constructor() {
     super();
@@ -14,14 +14,12 @@ class SearchBar extends Component {
   display = query => {
     this.props.onQueryChange(query);
   };
+
   render() {
     return (
-      <div>
-        <input
-          placeholder="search a gif!"
-          onChange={e => this.onInput(e.target.value)}
-        />
-        <button onClick={() => this.display(this.state.query)}>Search</button>
+      <div className="search-container">
+        <input onChange={e => this.onInput(e.target.value)} />
+        <button onClick={() => this.display(this.state.query)}>search</button>
       </div>
     );
   }
