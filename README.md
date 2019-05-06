@@ -1,3 +1,3 @@
 Used React and Giphy API.
-<a href="http://giphyplayground.herokuapp.com">Use it here</a>
+Use it <a href="http://giphyplayground.herokuapp.com">here</a><br><br>
 http://giphyplayground.herokuapp.com
